@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import style from '../styles/page.module.css';
 import axios from 'axios';
+import { FcBusinessman, FcBusinesswoman } from 'react-icons/fc';
 
 interface Character {
     id: number;
@@ -66,7 +67,15 @@ const Pagination: React.FC = () => {
                             <div className={style.table_td}>
                                 {character.gender}
                             </div>
-                            <div className={style.table_td}>image</div>
+                            <div className={style.table_td}>
+                                {character.gender === 'Male' ? (
+                                    <FcBusinessman size={30} />
+                                ) : character.gender === 'Female' ? (
+                                    <FcBusinesswoman size={30} />
+                                ) : (
+                                    'Unknown Image'
+                                )}
+                            </div>
                         </div>
                     ))}
                 </div>
