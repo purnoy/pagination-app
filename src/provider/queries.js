@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
 export const GET_CHARACTERS = gql`
-    query Cha($page: Int!) {
+    query Characters($page: Int!) {
         characters(page: $page) {
             results {
                 id

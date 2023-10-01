@@ -108,3 +108,28 @@
 .last_row{
     width: 20px; height: 20px
 }
+
+
+.table_input{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    margin-bottom: 10px;
+}
+.table_input button{
+    padding: 5px 15px;
+    font-size: 14px;
+    background-color: rgb(79, 79, 250);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.table_input input{
+    padding: 7px 3px;
+    font-size: 14px;
+}
+.table_input input:focus{
+    outline: none;
+}
